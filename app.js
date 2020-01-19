@@ -1,5 +1,6 @@
 // app.js
 
+//requirements
 const express = require('express');
 const bodyParser = require('body-parser');
 
@@ -19,7 +20,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use('/products', product);
 
-let port = 1234;
+//Port number removed see original
+let port = XXXX;
 
 app.listen(port, () => {
     console.log('Server is up and running on port numner ' + port);
